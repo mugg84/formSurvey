@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../img/luca-bravo-O453M2Liufs-unsplash.jpg") no-repeat center center
+      fixed;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+form {
+  width: 85vh;
+  background-color: rgba(47, 109, 163, 0.644);
+}
+
+.form-group {
+  margin: 3rem 0;
+}
+
+label {
+  margin-bottom: 1rem;
+}
+
+label input {
+  margin-right: 1rem;
+}
+#dropdown {
+  height: 100%;
+  font-size: 2rem;
+}
+
+#dropdown option {
+  color: #000;
+}
+
+#comment {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  form {
+    width: 100%;
+  }
+}

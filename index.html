@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bootstrap Theme</title>
+</head>
+
+<body>
+  <div class="container-fluid d-flex flex-column align-items-center justify-content-center">
+    <header class="row flex-column align-items-center p-4">
+      <h1 id="title">TravelScanner Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <form class="form p-5 rounded mb-5" id="survey-form">
+      <fieldset>
+
+
+        <div class="form-group d-flex flex-column mt-0">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text" placeholder="Name" required />
+        </div>
+
+
+        <div class="form-group d-flex flex-column">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" type="email" placeholder="Email" required />
+        </div>
+
+
+        <div class="form-group d-flex flex-column">
+          <label id="number-label" for="number">Phone</label>
+          <input id="number" type="number" min="1" max="10" placeholder="Phone" required />
+        </div>
+
+
+        <div class="form-group">
+          <label>Where are you planning to spend your holidays</label>
+          <div class="checkbox">
+            <label><input type="checkbox" value="1">Seaside</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="2">Mountain</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="3">City Break</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" value="3">Other</label>
+          </div>
+        </div>
+
+
+        <div class="form-group d-flex flex-column">
+          <label>How often do you use our platform</label>
+          <label class="radio"><input type="radio" name="optradio" value="1" checked>Once a month or more</label>
+          <label class="radio"><input type="radio" name="optradio" value="2">Once every three months or more</label>
+          <label class="radio"><input type="radio" name="optradio" value="3">Once a year or more</label>
+          <label class="radio"><input type="radio" name="optradio" value="3">Not sure / My first time</label>
+        </div>
+
+        <div class="form-group d-flex flex-column">
+          <label for="sel1">How did you hear about us?</label>
+          <select class="form-control" id="dropdown">
+            <option>Google</option>
+            <option>TV</option>
+            <option>Friend</option>
+            <option>Don't know</option>
+          </select>
+        </div>
+
+
+        <div class="form-group d-flex flex-column">
+          <label for="comment">Any comments or suggestions?
+          </label>
+          <textarea class="form-control mb-4" rows="5" id="comment" placeholder="Enter your comment here"></textarea>
+        </div>
+
+        <button id="submit" class="btn btn-lg btn-dark btn-block" type="submit">Submit</button>
+      </fieldset>
+    </form>
+
+
+
+  </div>
+
+</body>
+
+</html>
